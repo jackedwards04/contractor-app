@@ -1,0 +1,38 @@
+<html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+<head>
+	<div class="header">
+
+		<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+</head>
+
+<body>
+	<br><br><br>
+		<div class="row">
+			<a href="{% url 'custLand' %}">
+  			<div class="column director">
+					<h2>CUSTOMERS, CLICK HERE</h2>
+  			</div>
+			</a>
+			<div class="column">
+						<p>If your contractor gave you a code, you can enter it here.</p>
+  			</div>
+		</div>
+		<hr><br>
+		<div class="row">
+			<a href="{% url 'contrLand' %}">
+  			<div class="column director">
+					<h2>CONTRACTORS, CLICK HERE</h2>
+  			</div>
+			</a>
+			<div class="column">
+				<p>Contractors, see what products and services we offer, or sign in to your account.</p>
+			</div>
+			
+		</div>	
+		</div>	
+	</body>
+</html>

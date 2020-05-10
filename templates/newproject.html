@@ -1,0 +1,12 @@
+<html>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	</head>
+Created project with code {{ code }}
+<a href = '{% url "projectlist" %}'>View all projects</a>
+</html>

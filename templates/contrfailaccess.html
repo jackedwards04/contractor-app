@@ -1,0 +1,13 @@
+<html>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	</head>
+	<h1>Oops! Looks like this is not your project!</h1>
+	<a href = "{% url 'contrHome' %}">Return to my dashboard</a>
+	<p><a href="{% url 'logout' %}">logout</a></p>
+	</html>

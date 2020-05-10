@@ -1,0 +1,48 @@
+<html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+<head>
+	<div class="header">
+
+		<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+</head>
+<h1>You are viewing this project as a contractor</h1>
+<p>Project Name: {{ project.project_name }}</p>
+<div class="row">
+	<div class="column">
+		<h2 style="text-align: center">Chat: </h2><br>
+
+	<div id="chatbox" class="chatbox">
+	{% for c in chat %}
+	<p>
+		<div class="message">
+			{{ c }}
+		</div>
+		</p>
+	{% endfor %}
+	</div>
+	<form action="" method="post">
+		{% csrf_token %}
+    <label for="your_name">Message: </label>
+    <input id="new_message" type="text" name="new_message">
+    <input type="submit" value="OK">
+</form>
+</div>
+<div class="column">
+<h2>Personal Notes</h2>
+<div class="notes">
+<form action = "" method="POST">
+	{% csrf_token %}
+	<textarea rows = "5" cols = "60" name = "new_notes">
+            {{ notes }}
+         </textarea><br>
+	<input type="submit" value = "OK">
+	</form>
+	</div>
+	</div>
+	<br><br><br>
+	<a href="{% url 'logout' %}">
+		<div class="director logout">LOGOUT</div></a></p>
+	</html>

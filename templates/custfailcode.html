@@ -1,0 +1,16 @@
+<html>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	</head>
+	<h2>Oops! This seems like it was the wrong code!</h2>
+	<a href = "{% url 'codeEnter' %}">
+		<div class="director">
+			<h3>Enter another code</h3>
+		</div>
+		</a>
+	</html>

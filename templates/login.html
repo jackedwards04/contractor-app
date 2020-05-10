@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	</head>
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}

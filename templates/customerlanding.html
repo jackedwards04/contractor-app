@@ -1,0 +1,24 @@
+<html>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	</head>
+	
+	<h1>Welcome, customer!</h1>
+	<body>
+		<div class="row">
+			<a href="{%url 'codeEnter'%}">
+			<div class="column director">
+				<h2>I have a customer code</h2><br>
+			</div>
+			</a>
+		<a href="{% url 'contrLand' %}">
+			<div class="column director">
+				<h2>Wait, I'm a contractor!</h2><br>
+		</div>
+		</a>
+	</html>

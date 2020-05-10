@@ -1,0 +1,95 @@
+/*
+green:#91c282
+*/
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+	text-align: center;
+	color: #91c282;
+}
+
+.message {
+	text-align: left;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #eee;
+	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+.logout {
+	text-align: center;
+}
+
+.chatbox {
+	overflow: auto;
+	height: 50%;
+	text-align: left;
+}
+.director:hover {
+	font-size: 150%;
+}
+
+
+textarea {
+	height: 50%;
+	width: 100%;
+	resize:none;
+}
+h1,h2,h3,h4,h5,h6
+{
+
+	margin: 0 0 .5em;
+	font-weight: 500;
+	line-height: 1.1;
+	color: #91c282;
+	text-align: center
+}
+
+h1 { font-size: 2.25em; } /* 36px */
+h2 { font-size: 1.75em; } /* 28px */
+h3 { font-size: 1.375em; } /* 22px */
+h4 { font-size: 1.125em; } /* 18px */
+h5 { font-size: 1em; } /* 16px */
+h6 { font-size: .875em; } /* 14px */
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.codesubmit {
+	text-align: center;
+}
+
+.singleproject {
+	color:white;
+	text-align: center;
+	border-style: solid;
+}
+
+.singleproject:hover {
+	font-size: 130%;
+}

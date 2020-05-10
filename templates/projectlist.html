@@ -1,0 +1,21 @@
+<html>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	</head>
+	<h1>Here are all of your projects, {{ user}}</h1>
+	{% for project in projects %}
+	<a href = "{% url 'projectview' code=project.project_code %}">
+	<div class="singleproject">
+	<p><h2>{{ project.project_name }}</h2></p>
+	</div>
+</a>
+<br>
+	{% endfor %}
+	<p><a href="{% url 'logout' %}">logout</a></p>
+	<p><a href = '{% url "contrHome" %}'>Return to contractor dashboard</a></p> 
+	</html>

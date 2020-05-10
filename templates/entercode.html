@@ -1,0 +1,21 @@
+<html>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	</head>
+	<br>
+	<div class="codesubmit">
+		<h1>ENTER YOUR CODE</h2>
+<form action="/customer/projectview/" method="post">
+    {% csrf_token %}
+    {{ form }}
+		<br>
+    <input type="submit" value="Submit">
+</form>
+<h5>Your contractor should have given you an 8-digit code.</h5>
+</div>
+</html>

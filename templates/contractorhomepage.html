@@ -1,0 +1,26 @@
+<html>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<head>
+		<div class="header">
+
+	<h1>Welcome to Contractor v0.1!</h1>
+	</div>
+	
+	<h1>Welcome to your contractor dashboard, {{ username }}!</h1>
+	</head>
+	<body>
+		<a href="{% url 'projectlist' %}">
+			<div class="director">
+		<h2>View your projects</h2>
+		</div>
+		</a>
+
+		<a href="{% url 'newproject' %}">
+		<div class="director">
+		<h2>Start a new project</h2>
+		</div>
+		</a>
+	<p><a href="{% url 'logout' %}">logout</a></p>
+	</body>
+</html>
